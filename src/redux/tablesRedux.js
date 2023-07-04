@@ -1,4 +1,7 @@
 
+export const getAllTables = state => state.tables;
+export const getTableById = ({tables}, id) => tables.find(table => table.id === id)
+
 const createActionName = name => `app/tables/${name};`
 const UPDATE_TABLES = createActionName('UPDATE_TABLES');
 
@@ -14,7 +17,7 @@ export const fetchTables = () => {
 const tablesReducer = (statePart = [], action) => {
 	switch (action.type) {
 		case UPDATE_TABLES: 
-			return {...action.payload}
+			return [...action.payload ]
 		default:
 			return statePart
 	}
