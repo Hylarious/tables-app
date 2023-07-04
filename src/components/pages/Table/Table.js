@@ -11,8 +11,8 @@ const Table = () => {
 	console.log(id, tableData)
 	return (
 		<Container>
-			<Title>Table {tableData.id}</Title>
-			<TableForm />
+			<Title >Table {tableData.id}</Title>
+			<TableForm {...tableData}/>
 		</Container>
 	)
 }

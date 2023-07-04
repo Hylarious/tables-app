@@ -35,5 +35,19 @@
 			"maxPeopleAmount": 9,
 			"bill": 150
 		}
+	],
+	"tableStatus": [
+		{ "id": 1,
+			"title": "busy"
+		},
+		{ "id": 2,
+			"title": "cleaning"
+		},
+		{ "id": 3,
+			"title": "free"
+		},
+		{ "id": 4,
+		"title": "reserved"
+		}
 	]
 }
