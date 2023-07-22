@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from "react-redux"
 import { getAllTableStatus } from "../../../redux/tableStatusRedux"
 import { editTable, editTableRequest } from "../../../redux/tablesRedux"
 import styles from './TableForm.module.scss'
-import { set } from "lodash"
 import { useNavigate } from "react-router"
 
 
