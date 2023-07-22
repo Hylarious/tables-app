@@ -1,0 +1,21 @@
+.root{
+    .row{
+        margin: 10px 0;
+
+    }
+    .people {
+        display: inline-block;
+        text-align: center;
+        width: 60px;
+    }
+
+    span {
+        padding: 0 10px;
+    }
+
+    .bill {
+        display: inline;
+        text-align: center;
+        width: 60px
+    }
+}

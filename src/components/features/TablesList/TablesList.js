@@ -16,9 +16,9 @@ const TablesList = () => {
 		<ListGroup className="list-group-flush">
 			{tables.length === 0 ? 
 				<Spinner animation="border" role="status">
-      		<span className="visually-hidden">Loading...</span>
-    		</Spinner> 
-		: tables.map(table => {return <TableListItem key={table.id} id={table.id} status={table.status}>Table {table.id}</TableListItem>})}
+      				<span className="visually-hidden">Loading...</span>
+    			</Spinner> 
+				: tables.map(table => {return <TableListItem key={table.id} id={table.id} status={table.status}>Table {table.id}</TableListItem>})}
 		</ListGroup>
 		)
 }
