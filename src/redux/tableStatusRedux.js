@@ -8,7 +8,7 @@ const UPDATE_TABLE_STATUS = createActionName('UPDATE_TABLE_STATUS');
 export const updateTableStatus = payload => ({ type: UPDATE_TABLE_STATUS, payload});
 export const fetchTableStatus = () => {
 	return (dispatch) => {
-		fetch(`${API_URL}i/tableStatus`)
+		fetch(`${API_URL}/tableStatus`)
 		.then(res => res.json())
 		.then(tables => dispatch(updateTableStatus(tables)))
 	}
